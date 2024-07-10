@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Set background color of Progress Bar</title>
+	<style>
+		h1 {
+			color: #009688;
+		}
+
+		progress {
+			width: 300px;
+			height: 25px;
+			border: 2px solid gray;
+		}
+
+		progress::before {
+			content: "Loading: " attr(value) "%";
+			position: absolute;
+			width: 30%;
+			text-align: center;
+			font-size: 18px;
+			color: blue;
+		}
+
+		progress::-webkit-progress-bar {
+			background-color: #5ac45d;
+		}
+
+		progress::-webkit-progress-value {
+			background-color: #ec653c;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+	<h3>
+		Set Background Color of Progress
+		Bar using HTML and CSS
+	</h3>
+	<progress value="30" max="100"></progress>
+</body>
+
+</html>

@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    /* margin: 0;padding: 0; */
+    /* background-color: black; */
+    color: white;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     */
+     font-family: "REM", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+}
+
+html{
+    background-color: black;    
+}
+
+.body{
+    display: flex;
+    gap: 8px;
+    background-color: black;
+    /* background-color: ; */
+}
+
+.slider_responsive img{
+    width: 24px;
+    filter: invert(1);
+}
+
+.big1{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 97vh;
+    background-color: #000000;
+    border-radius: 6px;
+    gap: 8px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.big1-1{
+    padding: 0px 26px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(16 16 16);
+    height: 22%;
+    border-radius: 6px;
+    gap: 12%;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+.closebtn{
+    /* display: none; */
+}
+
+.big1-1-a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    width: 92px;
+    gap: 20px;
+}
+
+.spotify_logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.big1-1-a a{
+    text-decoration: none;
+    /* font-family: sans-serif; */
+    font-size: 16px;
+}
+
+.big1-2{
+    padding: 22px 26px;
+    background-color: rgb(16 16 16);
+    height: 70%;
+    border-radius: 6px;
+}
+
+.library{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.big1-2 .songlist{
+    overflow-y: scroll;
+    height: 50vh;
+    font-size: 12px;
+    padding: 0px 10px;
+    list-style-type: none;
+    width: 100%;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    border-radius: 12px;
+    background-color: rgba(112, 112, 112, 0);
+
+}
+
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 12px;
+    /* margin: 1px; */
+}
+::-webkit-scrollbar-corner{
+    /* width: 8px;
+    height: 8px; */
+    /* background-color: rgb(90, 90, 90); */
+    /* border-radius: 12px; */
+    /* margin: 1px; */
+}
+
+.songlist li{
+    word-wrap: break-word;
+    border: 1px solid #747474;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 14px 0px;
+    color: #cdcdcd;
+}
+
+.songlist li:hover{
+    background-color: #2a2a2a;
+    cursor: pointer;
+}
+
+.songlist li:target{
+    background-color: #31b935;
+}
+
+.big2{
+    width: 74vw;
+    height: 97vh;
+    background-image: linear-gradient(to bottom, rgb(42 42 42) 6%, 25%, rgb(16 16 16) 75%);
+    border-radius: 6px;
+}
+
+.nav{
+    /* background-color: rgb(8, 8, 8); */
+    display: flex;
+    height: 9%;
+    gap: 22%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search{
+    height: 76%;
+    width: 46%;
+    display: flex;
+    justify-content: center;
+}
+
+.search input{
+    background-color: #3b3b3b;
+    width: 80%;
+    padding: 0px 14px;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+
+.btns{
+    min-width: 42%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10%; */
+}
+
+.signup{
+    min-width: 48%;
+}
+
+.login{
+    /* width: 20%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48%;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 28px;
+    height: 72%;
+}
+
+.play_head{
+    font-size: 29px;
+    /* font-family: sans-serif; */
+    margin: 12px;
+}
+
+.playlists{
+    /* background-color: aquamarine; */
+    display: flex;
+    overflow-x: scroll;
+    gap: 24px;
+    padding: 0px 16px;
+}
+
+.play1{
+    display: flex;
+    flex-direction: column;
+    /* height: 270px; */
+    /* width: 21%; */
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 10px;
+}
+
+.play1:hover{
+    background-color: #343534;
+}
+
+.thumbnail1{
+    /* overflow: hidden; */
+    /* width: 90%; */
+    /* height: 54%; */
+    border-radius: 8px;
+    /* background-image: url('https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037'); */
+    /* background-size: cover; */
+}
+
+.playlist_cover{
+    width: 200px;
+    border-radius: 16px;
+}
+
+/* .playlist_cover:hover{
+    border-radius: 12px;
+} */
+
+.playdetails{
+    padding: 0px 12px;
+    /* font-family: sans-serif; */
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.playmore{
+    color: #565656;
+}
+
+.playbar_above{
+    display: flex;
+    justify-content: center;
+}
+
+.playbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background-color: rgb(0 149 53);
+    /* height: 8vh; */
+    margin: 60px 0px;
+    width: 72%;
+}
+
+.playbar1{
+    width: 92%;
+    justify-content: space-around;
+    /* gap: 7%; */
+    display: flex;
+    align-items: center;
+}
+
+.playbtn:hover{
+    cursor: pointer;
+}
+
+.previousbtn:hover{
+    cursor: pointer;
+}
+
+.nextbtn:hover{
+    cursor: pointer;
+}
+
+.song_info{
+    color: black;
+    font-size: 12px;
+    min-width: 30%;
+}
+
+.timevol{
+    display: flex;
+    width: 278px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.volume{
+    display: flex;
+    align-items: center;
+}
+
+.volbtn{
+    cursor: pointer;
+}
+
+#rangee{
+    width: 100px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+     appearance: none;
+     background: transparent;
+     cursor: pointer;
+     width: 72px;
+     height: 12px;
+ }
+ 
+ /* Removes default focus */
+ input[type="range"]:focus {
+   outline: none;
+ }
+ 
+ /***** Chrome, Safari, Opera and Edge Chromium styles *****/
+ /* slider track */
+ input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #c7c7c7;
+    border-radius: 5px;
+    height: 5px;  
+ }
+ 
+ /* slider thumb */
+ input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -2px; /* Centers thumb on the track */
+ 
+    /*custom styles*/
+    background-color: #080808;
+    border-radius: 15px;
+    height: 10px;
+    width: 10px;
+ }
+ 
+ input[type="range"]:hover::-webkit-slider-thumb {   
+    scale: 1.3;
+ }
+ 
+ /* ******* Firefox styles *******
+ /* slider track */
+ /* input[type="range"]::-moz-range-track {
+    background-color: #053a5f;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+ }
+ 
+ /* slider thumb */
+ /* input[type="range"]::-moz-range-thumb {
+    border: none; /*Removes extra border that FF applies*/
+    /* border-radius: 0; Removes default border-radius that FF applies */
+ 
+    /*custom styles*/
+    /* background-color: #5cd5eb;
+    height: 2rem;
+    width: 1rem; */
+ 
+ 
+ /* input[type="range"]:focus::-moz-range-thumb {
+   border: 1px solid #053a5f;
+   outline: 3px solid #053a5f;
+   outline-offset: 0.125rem; 
+ } */ */
+
+.playtime{
+    color: black;
+    font-size: 12px;
+    min-width: 10%;
+}
+
+.seekbar{
+    background-color: #87bb89;
+    border: 1px solid #a6dda8;
+    width: 94%;
+    height: 2px;
+    cursor: pointer;
+}
+
+.seekcircle{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    background-color: white;
+    bottom: 4px;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 980px)   {
+    .big1{
+        /* display: none; */
+        position: relative;
+        /* left: -200%; */
+        width: 30%;
+        min-width: 300px;
+    }
+    .big2{
+        width: 95vw;
+        position: relative;
+        left: -32%;
+    }
+    .playlist_cover{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .big2{
+        width: 112vw;
+    }
+    .playlist_cover{
+        width
+    }
+    /* .big1{
+        width: 85vw;
+    } */
+}
+@media screen and (min-width: 980px) and (max-width: 1200px)  {
+    .playbar1{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 980px) {
+    .slider_responsive{
+        display: none;
+    }
+    .closebtn{
+        display: none;
+    }
+}
+@media screen and (min-width: 980px) and (max-width: 1400px)  {
+    .playbar{
+        width: 90%;
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
